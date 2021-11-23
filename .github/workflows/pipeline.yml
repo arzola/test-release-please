@@ -18,10 +18,10 @@ steps:
     uses: wagoid/commitlint-github-action@v4
 
   - name: Release
-        uses: GoogleCloudPlatform/release-please-action@v2
-        with:
-          release-type: php
-          package-name: test-release-please
+    uses: GoogleCloudPlatform/release-please-action@v2
+    with:
+      release-type: php
+      package-name: test-release-please
 
  - name: Prepare Build
    if: startsWith(github.ref, 'refs/tags/')
