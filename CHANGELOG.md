@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.2](https://www.github.com/arzola/test-release-please/compare/v1.1.1...v1.1.2) (2021-11-24)
+
+
+### Bug Fixes
+
+* enable tags ([#7](https://www.github.com/arzola/test-release-please/issues/7)) ([238f41f](https://www.github.com/arzola/test-release-please/commit/238f41f6faba6962d52499941199dd99f6f0b0be))
+
 ### [1.1.1](https://www.github.com/arzola/test-release-please/compare/v1.1.0...v1.1.1) (2021-11-24)
 
 
