@@ -1,0 +1,37 @@
+name: CI workflow
+on:
+  push:
+    branches: [ dev, main ]
+    tags:
+      - '*.*.*'
+  pull_request:
+    branches: [ main ]
+jobs:
+  tests:
+    runs-on: ubuntu-20.04
+    name: Release test
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Check conventional commit messages
+        uses: wagoid/commitlint-github-action@v4
+
+      - name: Release
+        uses: GoogleCloudPlatform/release-please-action@v2
+        with:
+          release-type: php
+          package-name: test-release-please
+
+      - name: Prepare Build
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          export GITHUB_BUILD_PATH=${{github.workspace}}
+          export GITHUB_REPO_SLUG="$(basename ${{github.workspace}})"
+          export GITHUB_TAG="$(basename ${{github.ref}})"
+          echo "File to be created : $GITHUB_BUILD_PATH/$GITHUB_REPO_SLUG-$GITHUB_TAG.zip"
+          zip -r $GITHUB_BUILD_PATH/$GITHUB_REPO_SLUG-$GITHUB_TAG.zip $GITHUB_BUILD_PATH
+          cd $GITHUB_BUILD_PATH
+          ls $GITHUB_BUILD_PATH
