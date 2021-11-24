@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.3](https://www.github.com/arzola/test-release-please/compare/v1.1.2...v1.1.3) (2021-11-24)
+
+
+### Miscellaneous Chores
+
+* fix tag ([141018a](https://www.github.com/arzola/test-release-please/commit/141018af5cbdb348a0c99871d56cb68bff1a44ce))
+
 ### [1.1.2](https://www.github.com/arzola/test-release-please/compare/v1.1.1...v1.1.2) (2021-11-24)
 
 
