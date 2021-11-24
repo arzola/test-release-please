@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://www.github.com/arzola/test-release-please/compare/v1.1.0...v1.1.1) (2021-11-24)
+
+
+### Miscellaneous Chores
+
+* test new tags integration ([a165cb0](https://www.github.com/arzola/test-release-please/commit/a165cb053b11ea6546038cca28f7b62f319572b4))
+
 ## [1.1.0](https://www.github.com/arzola/test-release-please/compare/v1.0.0...v1.1.0) (2021-11-24)
 
 
