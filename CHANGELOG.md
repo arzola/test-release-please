@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.4](https://www.github.com/arzola/test-release-please/compare/v1.1.3...v1.1.4) (2021-11-24)
+
+
+### Bug Fixes
+
+* build steps to create artifacts ([b3f438c](https://www.github.com/arzola/test-release-please/commit/b3f438cbdd5383d21db366dfb43e32afbbc57410))
+
 ### [1.1.3](https://www.github.com/arzola/test-release-please/compare/v1.1.2...v1.1.3) (2021-11-24)
 
 
