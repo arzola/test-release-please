@@ -20,6 +20,7 @@ jobs:
         uses: wagoid/commitlint-github-action@v4
 
       - name: Release
+        id: release
         uses: GoogleCloudPlatform/release-please-action@v2
         with:
           release-type: php
@@ -35,7 +36,7 @@ jobs:
           zip -r $GITHUB_BUILD_PATH/$GITHUB_REPO_SLUG-$GITHUB_TAG.zip $GITHUB_BUILD_PATH
           cd $GITHUB_BUILD_PATH
           ls $GITHUB_BUILD_PATH
-          
+
       - name: Tag major and minor versions
         if: ${{ steps.release.outputs.release_created }}
         run: |
