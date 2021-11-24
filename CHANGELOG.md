@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/arzola/test-release-please/compare/v1.0.0...v1.1.0) (2021-11-24)
+
+
+### Features
+
+* new contributors feature ([040d58f](https://www.github.com/arzola/test-release-please/commit/040d58f0111189552e4c0dc350b94343344b6e7e))
+
 ## 1.0.0 (2021-11-24)
 
 
